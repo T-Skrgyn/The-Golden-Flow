@@ -1,0 +1,27 @@
+[
+  {
+    "order_id": "1001",
+    "customer": "Alice Smith",
+    "city": "New York",
+    "status": "Pending"
+  },
+  {
+    "order_id": "1002",
+    "customer": "Bob Jones",
+    "city": "Japan",
+    "status": "Delayed",
+    "message": "I sincerely apologize for the inconvenience caused by the moderate rain in Japan."
+  },
+  {
+    "order_id": "1003",
+    "customer": "Charlie Green",
+    "city": "London",
+    "status": "Pending"
+  },
+  {
+    "order_id": "1004",
+    "customer": "InvalidCity123",
+    "city": "InvalidCity123",
+    "status": "Pending"
+  }
+]
