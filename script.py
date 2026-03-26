@@ -34,7 +34,7 @@ with open("orders.json", "r") as f:
     orders = json.load(f)
 
 
-# 🔹 WEATHER
+# WEATHER
 async def fetch_weather(session, city):
     try:
         params = {"q": city, "appid": WEATHER_API_KEY}
@@ -53,7 +53,7 @@ async def fetch_weather(session, city):
         return None
 
 
-# 🔹 AI (STREAMING GEMMA)
+# AI (STREAMING GEMMA)
 async def generate_ai_message(customer, city, weather):
     try:
         prompt = f"""
@@ -105,7 +105,7 @@ Return only one sentence.
         return f"Hi {customer}, your order to {city} is delayed due to {weather['description']}. We appreciate your patience."
 
 
-# 🔹 MAIN
+# MAIN
 async def process_orders():
     connector = aiohttp.TCPConnector(ssl=ssl_context)
 
